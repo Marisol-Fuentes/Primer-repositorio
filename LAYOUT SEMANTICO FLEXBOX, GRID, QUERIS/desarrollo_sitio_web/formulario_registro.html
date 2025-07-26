@@ -1,0 +1,84 @@
+<!--Definimos que el dicumento es en htmel 5-->
+<!DOCTYPE html>
+<html >
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!--Nombre que aparece en la pestaña del navegador-->
+        <title>Formulario de Registro</title>
+        
+        <!--Vinculación del archivo CSS externo-->
+    <link rel="stylesheet" href="styles.css">
+
+    <!--Icon que aparece en la pestaña del anvegador-->
+        <link rel="icon" href="../desarrollo_sitio_web/imagen_escuelamate/Favicon con letras_UES_.png" title="icon con letra" type="image/x-icon"/>
+    </head>
+    <body id="form">
+        <div class="form-container">
+
+        <!--Titulo principar que aparecera en la pagina web-->
+        <h1>Formulario de Registro de Visitas</h1>
+
+    <!--Inicio para definir los apartados que llevara el formulario-->
+    <form>
+        <div class="form-group">
+        <!--Label, campo de texto con etiqueta y placeholder-->
+        <label for="nombre">Nombre completo:</label><br>
+        <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre" required><br><br>
+        </div>
+        <div class="form-group">
+        <!--Label, campo para correo con validación y placeholder-->
+        <label for="correo">Correo institucional:</label><br>
+        <input type="email" id="correo" name="correo" placeholder="# de carnet@ues.edu.sv" required><br><br>
+        </div>
+        <div class="form-group">
+        <!--Botones de opción (radio) para genero-->
+        <label>Género:</label><br>
+        <input type="radio" id="masculino" name="genero" value="Masculino">
+        <label for="masculino">Masculino</label><br>
+
+        <input type="radio" id="femenino" name="genero" value="Femenino">
+        <label for="femenino">Femenino</label><br><br>
+        </div>
+        <!--Casillas de verificación para intereses (ceckbox)-->
+        <div class="form-group">
+        <label>Selecciona como fue tu experiencia:</label><br>
+        
+            <input type="checkbox" id="exelente" name="experiencia" value="Exelente">
+            <label for="exelente">Exelente </label>
+        </div>
+        
+        <div class="form-group">
+        <input type="checkbox" id="buena" name="experiencia" value="Buena">
+        <label for="buena">Buena</label>
+        </div>
+
+        <div class="form-group">
+        <input type="checkbox" id="muy buena" name="experiencia" value="Muy buena">
+        <label for="muy buena">Muy buena</label>              
+        </div>
+
+        <div class="form-group">
+        <input type="checkbox" id="no es de mi interes" name="experiencia" value="No es de mi interes">
+        <label for="no es de mi interes">No es de mi interes</label>            
+        </div>
+        
+        <!--Área de texto con placeholder-->
+        <div class="form-group">
+        <label for="mensaje">Mensaje:</label><br>
+        <textarea id="mensaje" name="mensaje" rows="4"
+        cols="30" placeholder="Escriba sus comentario para mejorar ..."></textarea><br><br>
+        </div>
+        <!--Botón para enviar el formulario-->
+        <div class="form-button">
+        <input type="submit" value="Enviar"style="color: white; background-color: #0077cc; padding: 10px 15px; text-decoration: none; border-radius: 6px;">
+        </div>
+    </form>
+    <br>
+    <br>
+    
+        <!--Enlace para regresar a la página principal-->
+        <a href="pagina_principal.html" class="card">Regresar a la Página Principal</a>
+    </div>
+    </body>
+</html>
